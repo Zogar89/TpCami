@@ -1,0 +1,128 @@
+/*ESTE ES EL CÓDIGO RESPONSIVE PARA MOBILE FIRST*/
+
+/*MQ PARA PANTALLAS DE TABLET*/
+@media screen and (min-width:48em){
+}
+
+/*MQ PARA PANTALLAS DE PC*/
+@media screen and (min-width:60em){
+#formInsc {
+
+    /*border: black 1px solid;*/
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+#formInsc article {
+
+    /*border: black 1px solid;*/
+
+    width: 95%;
+
+    height: 400px;
+
+    margin-top: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-around;
+
+}
+
+/*------------- FORMULARIOS ------------*/
+
+#formInsc h2 {
+
+    font-size: 28px;
+
+}
+
+#formInsc form {
+
+    /*border: black 1px solid;*/
+
+    height: 15%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+#formInsc input {
+
+    border: #FFA559 2px solid;
+
+    width: 28%;
+
+    height: 30px;
+
+    border-radius: 15px;
+
+    padding-left: 10px;
+
+}
+
+.borrar {
+
+    max-width: 20%;
+
+    max-height: 40%;
+
+    align-self: center;
+
+}
+
+#agregarPersona {
+
+    /*border: black 1px solid;*/
+
+    width: 20%;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+#agregarPersona p {
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+}
+
+.sumar {
+
+    max-width: 20%;
+
+}
+
+.boton-enviar {
+
+    /*border: black 1px solid;*/
+
+    width: 28%;
+
+    height: 50px;
+
+    align-self: flex-end;
+
+}
+
+.boton-enviar p {
+
+    font-size: 20px;
+
+}
+}

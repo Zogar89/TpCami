@@ -1,0 +1,238 @@
+@media screen and (min-width:60em){
+main {
+
+    /*border: black 1px solid;*/
+
+    margin-top: 30px;
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+main section {
+
+    /*border: black 1px solid;*/
+
+    width: 75%;
+
+}
+
+/*------------- INFORMACIÓN ------------*/
+
+#infoCurso {
+
+    /*border: black 1px solid;*/
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+#infoCurso div {
+
+    width: 60%;
+
+}
+
+#infoCurso img {
+
+    border-radius: 20px;
+
+    width: 35%;
+
+    height: 30%;
+
+    align-self: center;
+
+    margin-left: 10px;
+
+}
+
+#infoCurso h2 {
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+    
+}
+
+#infoCurso li {
+
+    list-style: none;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+
+}
+
+/*------------- REQUISITOS ------------*/
+
+#requisito {
+
+    /*border: black 1px solid;*/
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding-left: 20px;
+
+}
+
+#requisito h4 {
+
+    margin-top: 15px;
+
+    font-size: 18px;
+
+}
+
+#requisito ul {
+
+    padding-left: 30px;
+
+    margin-top: 10px;
+
+}
+
+#requisito .enviar {
+
+    border: #FF5B00 2px solid;
+
+    width: 150px;
+
+    height: 40px;
+
+    margin: 5px 25px;
+
+    align-self: flex-end;
+
+}
+
+.enviar a {
+
+    text-decoration: none;
+
+    color: black;
+
+}
+
+/*------------- DOCENTE ------------*/
+
+#docente {
+
+    border: #FF5B00 2px solid;
+
+    background-color: #FFE6C7;
+
+    border-radius: 20px;
+
+    height: 190px;
+
+    padding: 20px;
+
+    margin: 30px;
+
+}
+
+#docente div {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+#docente img {
+
+    width: 8%;
+
+}
+
+#docente h2 {
+
+    margin-left: 15px;
+
+}
+
+#docente p {
+
+    margin-top: 15px;
+
+}
+
+
+/*------------- OTROS CURSOS ------------*/
+
+aside {
+
+    /*border: black 1px solid;*/
+
+    width: 20%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-around;
+
+}
+
+.infocurso {
+
+    border: #522710 2px solid;
+
+    background-color: #ffa559;
+
+    border-radius: 20px;
+
+    height: 17%;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.infocurso h4 {
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+
+}
+
+.infocurso ul {
+    
+    list-style: none;
+
+    margin-bottom: 10px;
+
+}
+
+.infocurso .enviar {
+
+    border: #FF5B00 2px solid;
+
+    width: 60%;
+
+    margin-top: 7px;
+
+    align-self: flex-end;
+
+}
+
+.infocurso .enviar a {
+
+    text-decoration: none;
+
+    color: black;
+
+}
+}
