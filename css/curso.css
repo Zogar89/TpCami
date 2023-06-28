@@ -10,26 +10,28 @@ main section {
   width: 75%;
 }
 /*------------- INFORMACIÓN ------------*/
-#infoCurso {
+#infoCursoPrincipal {
   /*border: black 1px solid;*/
   display: flex;
   justify-content: space-around;
+  margin: 0 3%;
 }
-#infoCurso div {
-  width: 60%;
+#infoCursoPrincipal div {
+  width: 100%;
+  margin: 0 3%;
 }
-#infoCurso img {
+#infoCursoPrincipal img {
   border-radius: 20px;
   width: 35%;
   height: 30%;
   align-self: center;
   margin-left: 10px;
 }
-#infoCurso h2 {
+#infoCursoPrincipal h2 {
   font-size: 35px;
   margin-bottom: 15px;
 }
-#infoCurso li {
+#infoCursoPrincipal li {
   list-style: none;
   font-size: 18px;
   margin-bottom: 10px;
@@ -39,7 +41,7 @@ main section {
   /*border: black 1px solid;*/
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  margin: 20px;
 }
 #requisito h4 {
   margin-top: 15px;
@@ -51,7 +53,6 @@ main section {
 }
 #requisito .enviar {
   border: #ff5b00 2px solid;
-  width: 150px;
   height: 40px;
   margin: 5px 25px;
   align-self: flex-end;
@@ -65,9 +66,8 @@ main section {
   border: #ff5b00 2px solid;
   background-color: #ffe6c7;
   border-radius: 20px;
-  height: 190px;
   padding: 20px;
-  margin: 30px;
+  margin: 1% 6%;
 }
 #docente div {
   display: flex;
@@ -141,12 +141,12 @@ aside {
   cursor: pointer;
   padding: 10px;
   width: 100%;
+  max-width: 1000px;
   text-align: left;
   outline: none;
   background-color: #f1f1f1;
   border: 1px solid orangered;
   cursor: pointer;
-  width: 45%;
 }
 .dropdown-btn:hover {
   background-color: #ddd;
@@ -233,6 +233,10 @@ aside {
   text-decoration: none;
   cursor: pointer;
 }
+.dropdown{
+  display: flex;
+  flex-direction: column;
+}
 /*--------------------------Media Query--------------------------*/
 /* PARA Tablets*/
 @media screen and (max-width: 1024px) {
@@ -266,6 +270,11 @@ aside {
   }
   .infocurso .enviar {
     margin: 0% 5% 1% 0;
-
+  }
+  #infoCursoPrincipal img {
+    width: 80%;
+  }
+  #infoCursoPrincipal{
+    flex-direction: column-reverse;
   }
 }
