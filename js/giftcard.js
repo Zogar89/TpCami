@@ -62,7 +62,7 @@ opcionFondo.addEventListener('change', function () {
 
     let rutaImagen = window.location.href + 'TP FINAL/img/imagen-gift/' + fondoElegido;
 
-    tarjeta.style.backgroundImage = 'url("../TP FINAL/img/imagen-gift/' + fondoElegido + '")';
+    tarjeta.style.backgroundImage = 'url("img/imagen-gift/' + fondoElegido + '")';
 });
 
 //CAMBIA EL TAMAÑO DE LA FUENTE
