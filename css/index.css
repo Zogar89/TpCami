@@ -5,6 +5,7 @@
 #carrousel {
     /*border: black 1px solid;*/
     text-align: center;
+    overflow-x: clip;
 }
 #carrousel img {
     width: 100%;

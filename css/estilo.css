@@ -1,10 +1,10 @@
-/*MQ PARA PANTALLAS DE PC*/
+/* PARA PANTALLAS DE PC*/
 @import url("https://fonts.googleapis.com/css2?family=Ysabeau:wght@300&display=swap");
-/*FORMATO DE CSS QUE APLICO A ESTAS PANTALLAS*/
 body {
   font-family: "Ysabeau", sans-serif;
   margin: 0;
   padding: 0;
+  min-width: 432px;
 }
 /*------------------------------- HEADER -------------------------------*/
 header {
@@ -219,6 +219,7 @@ footer section {
   background-position: -144px -72px;
 }
 /*--------------------------Media Query--------------------------*/
+/* PARA Tablets*/
 @media screen and (max-width: 1024px) {
   nav ul > li > a {
     padding: 4px 22px;
@@ -226,6 +227,7 @@ footer section {
   }
 }
 
+/* PARA Celulares*/
 @media screen and (max-width: 600px) {
   nav ul > li > a {
     font-size: small;
