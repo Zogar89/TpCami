@@ -12,17 +12,17 @@
 
     <!-- FAVICON -->
 
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="../TP FINAL/img/icon.png">
 
     <!-- HOJA DE ESTILOS CSS -->
 
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="../TP FINAL/css/estilo.css">
 
-    <link rel="stylesheet" href="css/inscripcion-curso.css">
+    <link rel="stylesheet" href="../TP FINAL/css/inscripcion-curso.css">
 
     <!-- TITULO -->
 
-    <title> Inicio </title>
+    <title> Inscripción </title>
 
 </head>
 
@@ -36,7 +36,7 @@
 
             <article id="logo">
 
-                <img src="img/header-footer/logo.png" usemap="#image-map" alt="logo">
+                <img src="../TP FINAL/img/header-footer/logo.png" usemap="#image-map" alt="logo">
 
             </article>
 
@@ -44,16 +44,20 @@
 
                 <input type="text" name="postal" list="informacion" placeholder="buscar cursos">
 
-                <button class="enviar"> Enviar </button>
+                <button id="enviar"> Enviar </button>
 
             </form>
 
             <article id="carrito">
 
-                <img src="img/header-footer/carritocompra.png" alt="carrito">
+                <img src="../TP final/img/header-footer/carritocompra.png" alt="carrito">
 
-                <h4> 1 </h4>
-    
+                <div>
+
+                    <span id="contador-cursos"><h4></h4></span>
+ 
+                 </div>
+
             </article>
 
         </section>
@@ -62,15 +66,15 @@
 
             <ul>
     
-                <li> <a href="index.html"><strong> Inicio </strong> </a> </li>
+                <li> <a href="../index.html"><strong> Inicio </strong> </a> </li>
 
-                <li><a href="curso.html"> <strong> Cursos </strong> </a></li>
+                <li><a href="../curso.html"> <strong> Cursos </strong> </a></li>
     
-                <li> <a href="calendario.html"> <strong> Calendario </strong> </a> </li>
+                <li> <a href="../calendario.html"> <strong> Calendario </strong> </a> </li>
     
-                <li> <a href="giftcard.html"> <strong> GiftCard </strong> </a> </li>
+                <li> <a href="../giftcard.html"> <strong> GiftCard </strong> </a> </li>
     
-                <li> <a href="contacto.html"> <strong> Contacto </strong> </a> </li>
+                <li> <a href="../contacto.html"> <strong> Contacto </strong> </a> </li>
         
             </ul>
 
@@ -83,96 +87,26 @@
     <main>
 
         <section id="formInsc">
-
             <article>
-
-                <h2> Incripción Photoshop e Illustrator </h2>
-
-                    <!------------------- INSCRIPCIÓN NRO. 1 ------------------->
-
-                    <form action="#">
-
-                        <!-- NOMBRE -->
-
-                        <input type="text" placeholder="Ingresar nombre" required>
-
-                        <!-- APELLIDO -->
-
-                        <input type="text" placeholder="Ingresar apellido" required>
-
-                        <!-- DNI -->
-
-                        <input type="text" placeholder="Ingresar DNI" required>
-
-                        <!-- IMAGEN BORRAR -->
-
-                        <img src="img/borrar.png" alt="borrar" class="borrar">
-
-                    </form>
-
-                    <!------------------- INSCRIPCIÓN NRO. 2 ------------------->
-
-                    <form action="#">
-
-                        <!-- NOMBRE -->
-
-                        <input type="text" id="nombre" placeholder="Ingresar nombre" required>
-
-                        <!-- APELLIDO -->
-
-                        <input type="text" id="nombre" placeholder="Ingresar apellido" required>
-
-                        <!-- DNI -->
-
-                        <input type="text" id="nombre" placeholder="Ingresar DNI" required>
-
-                        <!-- IMAGEN BORRAR -->
-
-                        <img src="img/borrar.png" alt="borrar" class="borrar">
-
-                    </form>
-
-                    <!------------------- INSCRIPCIÓN NRO. 3 ------------------->
-
-                    <form action="#">
-
-                        <!-- NOMBRE -->
-
-                        <input type="text" id="nombre" placeholder="Ingresar nombre" required>
-
-                        <!-- APELLIDO -->
-
-                        <input type="text" id="nombre" placeholder="Ingresar apellido" required>
-
-                        <!-- DNI -->
-
-                        <input type="text" id="nombre" placeholder="Ingresar DNI" required>
-
-                        <!-- IMAGEN BORRAR -->
-
-                        <img src="img/borrar.png" alt="borrar" class="borrar">
-
-                    </form>
-
-                    <div id="agregarPersona">
-
-                        <img src="img/sumar.png" alt="agregar" class="sumar">
-
-                        <p> Agregar persona </p>
-
-                    </div>
-
-                    <form action="#" class="boton-enviar">
-
-                        <p> <strong> Precio a pagar: </strong> $7800 </p>
-
-                        <button class="enviar"> Enviar </button>
-
-                    </form>
-
+              <h2>Inscripción Photoshop e Illustrator</h2>
+              <form action="#">
+                <input type="text" placeholder="Ingresar nombre" required>
+                <input type="text" placeholder="Ingresar apellido" required>
+                <input type="text" placeholder="Ingresar DNI" required>
+                <p><strong>Importe:</strong> $7800</p>
+                <img src="../TP FINAL/img/borrar.png" alt="borrar" class="borrar">
+              </form>
+     
+              <div id="agregarPersona">
+                <img src="../TP FINAL/img/sumar.png" alt="agregar" class="sumar">
+                <p>Agregar persona</p>
+              </div>
+              <form action="#" class="boton-enviar">
+                <p><strong>Total:</strong> <span id="total"></span></p>
+                <button class="enviar">Inscribirse</button>
+              </form>
             </article>
-
-        </section>
+          </section>
 
     </main>
 
@@ -191,30 +125,22 @@
                     <h2> DNI: 38786865 </h2>
 
                 </div>
-
-                <div>
-
-                    <h2> Melina Pereyra Balaguer </h2>
-
-                    <h2> DNI: 39803694 </h2>
-
-                </div>
-
+                
             </article>
 
             <article id="navegacionMenuFooter">
 
                 <ul>
             
-                    <li> <a href="index.html"><strong> Inicio </strong> </a> </li>
+                    <li> <a href="../index.html"><strong> Inicio </strong> </a> </li>
             
-                    <li><a href="curso.html"> <strong> Cursos </strong> </a></li>
+                    <li><a href="../curso.html"> <strong> Cursos </strong> </a></li>
             
-                    <li> <a href="calendario.html"> <strong> Calendario </strong> </a> </li>
+                    <li> <a href="../calendario.html"> <strong> Calendario </strong> </a> </li>
             
-                    <li> <a href="giftcard.html"> <strong> GiftCard </strong> </a> </li>
+                    <li> <a href="../giftcard.html"> <strong> GiftCard </strong> </a> </li>
             
-                    <li> <a href="contacto.html"> <strong> Contacto </strong> </a> </li>
+                    <li> <a href="../contacto.html"> <strong> Contacto </strong> </a> </li>
                 
                 </ul>
 
@@ -238,6 +164,14 @@
 
     </footer>
     
+    <!-----------------------------REVISAR ESTO--------------------------------->
+
+    <div id="modal">
+        <p>Se han inscripto correctamente al curso las siguientes personas:</p>
+    </div>
+
+    <script src="../TP FINAL/js/inscripcion-curso.js"></script>
+    <script src="../TP FINAL/js/curso.js"></script>
 </body>
 
 </html>

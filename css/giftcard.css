@@ -55,12 +55,16 @@ main section {
 
     align-items: center;
 
+    flex-direction: column;
+
+    padding: 2%;
+
 }
 
-#tarjeta h2 {
+#tarjeta h2{
     font-size: 2em;
-
-    text-align: center;
+    margin-left: 0%;
+    margin-top: 0.3%;
 }
 
 /*------------- CAMPOS ------------*/
@@ -195,8 +199,6 @@ main section {
 
     display: flex;
 
-    align-items: flex-end;
-
 }
 
 #opcionMonto label {
@@ -211,7 +213,7 @@ main section {
 
 #ubicarPrecio {
 
-    height: 100px;
+    height: 6.25em;
 
     display: flex;
 
@@ -219,11 +221,10 @@ main section {
 
     justify-content: space-around;
 
+    width: 100%;
 }
 
 #ubicarPrecio div {
-
-    /*border: black 1px solid;*/
 
     width: 60%;
 
@@ -238,7 +239,10 @@ main section {
 #ubicarPrecio img {
 
     width: 20%;
-    
+    height: 3em;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 2%;
 }
 
 
@@ -284,12 +288,5 @@ main section {
 .color4{
     color: #ffe7c7;
 }
-#tarjeta div h3 {
-    max-width: 100%;
-    font-size: 1.2em;
-    position: absolute;
-    text-align: center;
-    overflow: hidden;
-    padding-bottom: 1.2%;
-}
+
 }

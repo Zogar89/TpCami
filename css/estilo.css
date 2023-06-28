@@ -83,7 +83,7 @@ header section {
   width: 100%;
   margin-right: 30px;
 }
-#carrito h4 {
+#contador-cursos{
   background-color: #ffe6c7;
   opacity: 65%;
   border-radius: 20px;
@@ -94,6 +94,7 @@ header section {
   right: 40px;
   text-align: center;
   padding: 0 10px;
+  font-weight: bold;
 }
 /*------------- MENU ------------*/
 nav {

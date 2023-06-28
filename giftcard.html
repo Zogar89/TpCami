@@ -12,17 +12,17 @@
 
     <!-- FAVICON -->
 
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="../TP FINAL/img/icon.png">
 
     <!-- HOJA DE ESTILOS CSS -->
 
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="../TP FINAL/css/estilo.css">
 
-    <link rel="stylesheet" href="css/giftcard.css">
+    <link rel="stylesheet" href="../TP FINAL/css/giftcard.css">
 
     <!-- TITULO -->
 
-    <title> Inicio </title>
+    <title> GiftCard </title>
 
 </head>
 
@@ -44,7 +44,7 @@
 
                 <input type="text" name="postal" list="informacion" placeholder="buscar cursos">
 
-                <button class="enviar"> Enviar </button>
+                <button id="enviar"> Enviar </button>
 
             </form>
 
@@ -52,8 +52,12 @@
 
                 <img src="img/header-footer/carritocompra.png" alt="carrito">
 
-                <h4> 1 </h4>
-    
+                <div>
+
+                   <span id="contador-cursos"><h4></h4></span>
+
+                </div>
+
             </article>
 
         </section>
@@ -87,9 +91,8 @@
             <!------------------------ TARJETA ------------------------>
 
             <article id="tarjeta">
-                
                 <h2> GiftCard Digital ARTS </h2>
-
+                <h3></h3>
             </article>
 
             <!------------------------ OPCIONES GIFTCARD ------------------------>
@@ -104,33 +107,33 @@
 
                     <label for=""> Ingresar nombre y apellido </label>
 
-                    <input type="text" class="campo">
+                    <input type="text" class="campo" name="texto" id="texto" placeholder="Ingrese nombre y apellido.">
             
                 </form>
 
-                <!------- FORMULARIO COLOR ------->
+                <!------- FORMULARIO COLOR TEXTO------->
 
                 <form action="#" id="opcionColor">
 
-                    <label for="color"> Color de la tarjeta </label>
+                    <label for="color"> Color del texto en la tarjeta </label>
 
                     <div>
 
-                        <input type="radio"  name="color"  checked>
+                        <input type="radio"  name="color"  value="color1" id="radioColor1">
 
-                        <img src="img/imagen-gift/color-FF5B00.png" alt="">
+                        <img src="../TP FINAL/img/imagen-gift/color-FF5B00.png" alt="">
 
-                        <input type="radio"  name="color">
+                        <input type="radio"  name="color" value="color2" id="radioColor2">
 
-                        <img src="img/imagen-gift/color454545.png" alt="">
+                        <img src="../TP FINAL/img/imagen-gift/color454545.png" alt="">
 
-                        <input type="radio"  name="color">
+                        <input type="radio"  name="color" value="color3" id="radioColor3">
 
-                        <img src="img/imagen-gift/colorFFA559.png" alt="">
+                        <img src="../TP FINAL/img/imagen-gift/colorFFA559.png" alt="">
 
-                        <input type="radio"  name="color">
+                        <input type="radio"  name="color" value="color4" id="radioColor4">
 
-                        <img src="img/imagen-gift/colorFFE6C7.png" alt="">
+                        <img src="../TP FINAL/img/imagen-gift/colorFFE6C7.png" alt="">
 
                     </div>
 
@@ -144,13 +147,13 @@
 
                     <div>
 
-                        <input type="radio" name="tamaño"> <p id="quince"> 15px </p>
+                        <input type="radio" name="tamaño" value="tamaño1" id="radioTamaño1"> <p id="quince"> 15px </p>
 
-                        <input type="radio" name="tamaño"> <p id="veinte"> 20px </p>
+                        <input type="radio" name="tamaño" value="tamaño2" id="radioTamaño2"> <p id="veinte"> 20px </p>
 
-                        <input type="radio" name="tamaño"> <p id="veinticinco"> 25px </p>
+                        <input type="radio" name="tamaño" value="tamaño3" id="radioTamaño3"> <p id="veinticinco"> 25px </p>
 
-                        <input type="radio" name="tamaño"> <p id="treinta"> 30px </p>
+                        <input type="radio" name="tamaño" value="tamaño4" id="radioTamaño4"> <p id="treinta"> 30px </p>
 
                     </div>
 
@@ -161,30 +164,65 @@
                 <form action="#" id="opcionMonto">
 
                     <label for="monto"> Vale por: $ </label>
-
-                    <input type="number"  min="500" class="campo">
-
-                </form>
+                    <input type="number" name="valor" value="valor" id="valor" class="campo" placeholder="Ingrese el monto de la Giftcard.">
+                    </form>
 
                 <!------- FORMULARIO UBICACION PRECIO ------->
 
                 <form action="#" id="ubicarPrecio">
 
-                    <label for="ubicacion"> Ubicación precio </label>
+                    <label for="ubicacion"> Ubicación del texto </label>
 
                     <div>
+                        
+                        <label for="radioCentro">Centro</label>
+                        
+                        <img src="../TP FINAL/img/imagen-gift/opcionDos.png" alt="">
 
-                        <input type="radio" name="ubicacionPrecio">
+                        <input type="radio" name="alineacion" value="centrado" id="radioCentro" >  
 
-                        <img src="img/imagen-gift/opcionUno.png" alt="">
+                        <label for="radioIzquierda">Arriba</label>
 
-                        <input type="radio" name="ubicacionPrecio">
+                        <img src="../TP FINAL/img/imagen-gift/opcionUno.png" alt="">         
 
-                        <img src="img/imagen-gift/opcionDos.png" alt="">
+                        <input type="radio" name="alineacion" value="arriba" id="radioIzquierda" >
 
-                        <input type="radio" name="ubicacionPrecio">
+                        <label for="radioDerecha">Abajo</label>
 
-                        <img src="img/imagen-gift/opcionTres.png" alt="">
+                        <img src="../TP FINAL/img/imagen-gift/opcionTres.png" alt="">       
+
+                        <input type="radio" name="alineacion" value="abajo" id="radioDerecha">
+
+                    </div>
+
+                </form>
+
+                <!---------FORMULARIO FONDO------->
+                <form action="#" id="opcionFondo">
+
+                    <label for="fondo"> Fondo </label>
+
+                    <div id="ubicFondo">
+
+                        <input type="radio" name="fondo" value= "fondo1.jpg" id="radioFondo1" > 
+
+                        <img src="../TP FINAL/img/imagen-gift/fondo1.jpg" alt="">
+
+                        <input type="radio" name="fondo" value= "fondo2.jpg" id="radioFondo2"> 
+
+                        <img src="../TP FINAL/img/imagen-gift/fondo2.jpg" alt="">
+
+                        <input type="radio" name="fondo" value= "fondo3.jpg" id="radioFondo3"> 
+
+                        <img src="../TP FINAL/img/imagen-gift/fondo3.jpg" alt="">
+
+                        <input type="radio" name="fondo" value= "fondo4.jpg" id="radioFondo4"> 
+
+                        <img src="../TP FINAL/img/imagen-gift/fondo4.jpg" alt="">
+
+                        <input type="radio" name="fondo" value= "fondo5.jpg" id="radioFondo5"> 
+
+                        <img src="../TP FINAL/img/imagen-gift/fondo5.jpg" alt="">
 
                     </div>
 
@@ -215,15 +253,7 @@
                     <h2> DNI: 38786865 </h2>
 
                 </div>
-
-                <div>
-
-                    <h2> Melina Pereyra Balaguer </h2>
-
-                    <h2> DNI: 39803694 </h2>
-
-                </div>
-
+                
             </article>
 
             <article id="navegacionMenuFooter">
@@ -261,7 +291,10 @@
         </section>
 
     </footer>
-    
+
+    <script src="../TP FINAL/js/giftcard.js"></script>
+    <script src="../TP FINAL/js/index.js"></script>
+
 </body>
 
 </html>

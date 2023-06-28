@@ -44,7 +44,7 @@
 
                 <input type="text" name="postal" list="informacion" placeholder="buscar cursos">
 
-                <button class="enviar"> Enviar </button>
+                <button id="enviar"> Enviar </button>
 
             </form>
 
@@ -52,8 +52,12 @@
 
                 <img src="img/header-footer/carritocompra.png" alt="carrito">
 
-                <h4> 1 </h4>
-    
+                <div>
+
+                   <span id="contador-cursos"><h4></h4></span>
+
+                </div>
+
             </article>
 
         </section>
@@ -142,7 +146,49 @@
 
                 </ul>
 
-                <button class="enviar"><a href="inscripcion-curso.html"> Inscribirse </a> </button>
+              <div class="dropdown">
+  <button class="dropdown-btn">INTRODUCCIÓN</button>
+  <div class="dropdown-content">
+    <a href="#">Opción 1</a>
+    <input type="radio" id="opcion1_1" name="opciones_1">
+    <a href="#">Opción 2</a>
+    <input type="radio" id="opcion2_1" name="opciones_1">
+    <a href="#">Opción 3</a>
+    <input type="radio" id="opcion3_1" name="opciones_1">
+    <a href="#">Opción 4</a>
+    <input type="radio" id="opcion4_1" name="opciones_1">
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropdown-btn">UNIDAD I</button>
+  <div class="dropdown-content">
+    <a href="#">Opción 1</a>
+    <input type="radio" id="opcion1_2" name="opciones_2">
+    <a href="#">Opción 2</a>
+    <input type="radio" id="opcion2_2" name="opciones_2">
+    <a href="#">Opción 3</a>
+    <input type="radio" id="opcion3_2" name="opciones_2">
+    <a href="#">Opción 4</a>
+    <input type="radio" id="opcion4_2" name="opciones_2">
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropdown-btn">UNIDAD II</button>
+  <div class="dropdown-content">
+    <a href="#">Opción 1</a>
+    <input type="radio" id="opcion1_3" name="opciones_3">
+    <a href="#">Opción 2</a>
+    <input type="radio" id="opcion2_3" name="opciones_3">
+    <a href="#">Opción 3</a>
+    <input type="radio" id="opcion3_3" name="opciones_3">
+    <a href="#">Opción 4</a>
+    <input type="radio" id="opcion4_3" name="opciones_3">
+  </div>
+</div>
+
+                <button class="enviar" id="comprar6"> Inscribirse </button>
 
             </article>
 
@@ -154,7 +200,7 @@
 
                     <img src="img/avatar.png" alt="avatar">
 
-                    <h2> Docente: Maria Anabel Patehua </h2>
+                    <h2> Docente: Rosenthal Alicia Gabriela </h2>
 
                 </div>
 
@@ -191,7 +237,7 @@
 
                 </ul>
 
-                <button class="enviar"> <a href="curso.html"> Ver mas... </a> </button>
+                <button class="enviar"  id="comprar7"> Inscribirse </button>
 
  
             </article>
@@ -210,7 +256,7 @@
     
                 </ul>
 
-                <button class="enviar"> <a href="curso.html"> Ver mas... </a> </button>          
+                <button class="enviar"  id="comprar8"> Inscribirse </button>          
 
             </article>
 
@@ -228,7 +274,7 @@
     
                 </ul>
 
-                <button class="enviar"> <a href="curso.html"> Ver mas... </a> </button>
+                <button class="enviar"  id="comprar9"> Inscribirse </button>
 
             </article>
 
@@ -296,8 +342,20 @@
 
         </section>
 
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>¡Felicidades te inscribiste al curso Photoshop e Illustrator!</h2>
+              <p>En este curso aprenderás a utilizar las herramientas profesionales más destacadas del universo gráfico: Adobe Illustrator y Adobe Photoshop. <br>Diseñarás el branding de tu propia marca, crearás piezas gráficas para redes sociales, y podrás comunicar tanto ideas como conceptos mediante el uso del lenguaje visual.</p>
+              <h3><strong>El curso comienza el día miércoles 28 de junio del corriente año.</strong></h3>
+            </div>
+          </div>
+
     </footer>
     
+    <script src="../TP FINAL/js/index.js"></script>
+    <script src="../TP FINAL/js/curso.js"></script>
+
 </body>
 
 </html>

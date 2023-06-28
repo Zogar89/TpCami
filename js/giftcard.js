@@ -8,8 +8,9 @@ let btnNaranjaO = document.getElementById("radioColor1");
 let btnGris = document.getElementById("radioColor2");
 let btnNaranjaC = document.getElementById("radioColor3");
 let btnRosa = document.getElementById("radioColor4");
-let valor = document.querySelector("#valor");
+let valor = document.getElementById("valor");
 let h3 = document.querySelector('#tarjeta h3');
+
 
 //CAMBIA EL TEXTO DE LA TARJETA
 
@@ -59,9 +60,9 @@ opcionFondo.addEventListener('change', function () {
 
     let fondoElegido = opcionFondo.querySelector('input[name="fondo"]:checked').value;
 
-    let rutaImagen = window.location.href + 'img/imagen-gift/' + fondoElegido;
+    let rutaImagen = window.location.href + 'TP FINAL/img/imagen-gift/' + fondoElegido;
 
-    tarjeta.style.backgroundImage = 'url("../img/imagen-gift/' + fondoElegido + '")';
+    tarjeta.style.backgroundImage = 'url("../TP FINAL/img/imagen-gift/' + fondoElegido + '")';
 });
 
 //CAMBIA EL TAMAÑO DE LA FUENTE
@@ -98,4 +99,71 @@ valor.addEventListener("input", function () {
 
 //CAMBIA LA ALINEACIÓN DEL TEXTO 
 
+/*ubicacionPrecio.forEach(function(radio) {
+    radio.addEventListener('change', function() {
+        var ubicacionElegida = this.value;
+        var tarjeta = document.getElementById('#tarjeta h3');
+    
+      switch (ubicacionElegida) {
+        case 'alinUno':
+          tarjeta.style.justifyContent = 'flex-end';
+          tarjeta.style.alignItems = 'flex-start';
+          break;
+        case 'alinDos':
+          tarjeta.style.justifyContent = 'center';
+          tarjeta.style.alignItems = 'flex-end';
+          break;
+        case 'alinTres':
+          tarjeta.style.justifyContent = 'flex-start';
+          tarjeta.style.alignItems = 'flex-start';
+          break;
+        default:
+          tarjeta.style.justifyContent = 'center';
+          tarjeta.style.alignItems = 'center';
+      }
+    });
+  });*/
 
+
+/*btnAlin0.addEventListener("click", function (e) {
+    e.preventDefault();
+    valor1.classList.remove("alinDos", "alinTres");
+    valor1.classList.add("alinUno");
+});
+
+btnAlin2.addEventListener("click", function (e) {
+    e.preventDefault();
+    valor1.classList.remove("alinUno", "alinTres");
+    valor1.classList.add("alinDos");
+});
+
+btnAlin3.addEventListener("click", function (e) {
+    e.preventDefault();
+    valor1.classList.remove("alinDos", "alinUno");
+    valor1.classList.add("alinTres");
+});*/
+
+//CAMBIA LA ALINEACIÓN DEL TEXTO EN LA TARJETA
+
+var radios = document.querySelectorAll('input[name="alineacion"]');
+
+radios.forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      var alineacion = this.value;
+      var tarjeta = document.getElementById('tarjeta');
+    
+      switch (alineacion) {
+        case 'centrado':
+          tarjeta.style.justifyContent = 'center';
+          break;
+        case 'arriba':
+          tarjeta.style.justifyContent = 'flex-start';
+          break;
+        case 'abajo':
+          tarjeta.style.justifyContent = 'flex-end';
+          break;
+        default:
+          tarjeta.style.justifyContent = 'center';
+      }
+    });
+  });

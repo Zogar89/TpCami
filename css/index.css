@@ -53,6 +53,12 @@
     font-size: 25px;
     margin: 10px;
 }
+#detalle{
+    font-size: 15px;
+    margin: 10px;
+    text-decoration: none;
+    color: #000000;
+}
 .cajadatos ul {
     margin: 0px;
 }
@@ -60,6 +66,7 @@
     margin-left: 10px;
     list-style: none;
     font-size: 20px;
+    margin-top: 1em;
 }
 #cajacurso img {
     max-width: 100%;

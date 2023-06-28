@@ -12,17 +12,17 @@
 
     <!-- FAVICON -->
 
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="../TP FINAL/img/header-footer/logo.png">
 
     <!-- HOJA DE ESTILOS CSS -->
 
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="../TP FINAL/css/estilo.css">
 
-    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="../TP FINAL/css/contacto.css">
 
     <!-- TITULO -->
 
-    <title> Inicio </title>
+    <title> Formulario de Contacto </title>
 
 </head>
 
@@ -44,7 +44,7 @@
 
                 <input type="text" name="postal" list="informacion" placeholder="buscar cursos">
 
-                <button class="enviar"> Enviar </button>
+                <button id="enviar"> Enviar </button>
 
             </form>
 
@@ -52,8 +52,12 @@
 
                 <img src="img/header-footer/carritocompra.png" alt="carrito">
 
-                <h4> 1 </h4>
-    
+                <div>
+
+                   <span id="contador-cursos"><h4></h4></span>
+
+                </div>
+
             </article>
 
         </section>
@@ -88,37 +92,28 @@
 
             <article id="formulario">
 
-                <form action="#">
-
-                    <!-- NOMBRE Y APELLIDO -->
-
-                    <label for="nombreyapellido"> Ingrese Nombre y Apellido <strong>*</strong></label>
-
-                    <input type="text" id="nom-ape" required>
-
-                    <!-- EMAIL -->
-
-                    <label for="email"> Ingrese su email <strong>*</strong></label>
-
-                    <input type="email" id="email" required>
-
-                    <!-- TELEFONO -->
-
-                    <label for="tel"> Ingrese numero de telefono </label>
-
-                    <input type="tel" id="telefono">
-
-                    <!-- MENSAJE -->
-
-                    <p> Deja aquí tu mensaje... </p>
-
-                    <textarea id="mensaje" cols="30" rows="10"></textarea>
-
-                    <!-- ENVIAR -->
-
-                    <button class="enviar"> Enviar </button>
-
+                <form id="contact-form" action="#" method="POST">
+                    <label for="nom-ape">Ingrese Nombre y Apellido:</label>
+                    <input type="text" id="nom-ape" name="nom-ape" placeholder="Coloque su nombre y apellido." required>
+            
+                    <label for="email">Ingrese su email:</label>
+                    <input type="email" id="email" name="email" placeholder="Coloque aquí su correo electrónico." required>
+            
+                    <label for="telefono">Ingrese número de teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Coloque su teléfono de contacto." required>
+            
+                    <label for="mensaje">Deje aquí su mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" cols="30" rows="10" maxlength="1000" placeholder="Deje aquí su consulta." required></textarea>
+                    <p id="contador-caracteres">Caracteres ingresados: 0 | Caracteres restantes: 1000</p>
+            
+                    <input type="submit" class="enviar" value="Enviar">
                 </form>
+            
+                <div id="popup" style="display:none;">
+                    <p>Consulta enviada</p>
+                    <button id="btnAceptar">Aceptar</button>
+                </div>
+            
 
             </article>
 
@@ -201,7 +196,10 @@
         </section>
 
     </footer>
-    
+
+    <script src="../TP FINAL/js/contacto.js"></script>
+    <script src="../TP FINAL/js/index.js"></script>
+
 </body>
 
 </html>
