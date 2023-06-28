@@ -106,10 +106,10 @@ nav ul {
 }
 nav > ul {
   /*border: white 1px solid;*/
-  width: 80%;
+  width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 0;
   padding: 0;
 }
@@ -223,7 +223,7 @@ footer section {
   nav ul > li > a {
     font-size: small;
     padding: 4px 10px;
-    margin: 0 5px;
+    margin: 0 2px;
   }
   header section {
     height: 80px;
