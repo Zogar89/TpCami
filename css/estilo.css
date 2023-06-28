@@ -228,8 +228,8 @@ footer section {
   header section {
     height: 80px;
   }
-#enviar {
-    font-size: small;
+  #enviar {
+    font-size: 3vw;
   }
   #carrito img {
     width: 80%;
@@ -255,5 +255,11 @@ footer section {
 }
 #redes {
   scale: 0.8;
+}
+#buscador {
+  scale: 0.9;
+}
+header section {
+  scale: 0.9;
 }
 }
