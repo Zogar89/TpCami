@@ -1,39 +1,23 @@
 #formInsc {
-
     display: flex;
-
     justify-content: center;
-
     flex-direction: column;
-
     align-items: center;
 }
-
 #formInsc article {
-
     width: 95%;
-
     height: 400px;
-
     margin-top: 10px;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: space-around;
-
 }
-
 /*------------- FORMULARIOS ------------*/
-
-
 #agregarPersona img {
     width: 20px;
     height: 20px;
     cursor: pointer;
   }
-  
   #agregarPersona p {
     margin: 0;
     cursor: pointer;
@@ -42,7 +26,6 @@
     font-size: 18px;
     font-weight: 600;
 }
-
   #agregarPersona {
     display: flex;
     align-items: center;
@@ -51,11 +34,9 @@
     width: 20%;
     height: 50px;
   }
-  
   .boton-enviar {
     margin-top: 20px;
   }
-  
   /* Estilos para los campos de "agregar persona" adicionales */
   #formInsc form:not(:first-child) input[type="text"] {
     /* Aplica los mismos estilos que el primer campo de "agregar persona" */
@@ -64,61 +45,33 @@
     border-radius: 5px;
     margin-top: 2%;
   }
-  
 #formInsc h2 {
-
     font-size: 28px;
-
 }
-
 #formInsc form {
-
     height: 15%;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
 }
-
 #formInsc input {
-
     border: #FFA559 2px solid;
-
     width: 28%;
-
     height: 30px;
-
     border-radius: 15px;
-
     padding-left: 10px;
-
 }
-
 .sumar {
-
     max-width: 20%;
-
 }
-
 .boton-enviar {
-
     width: 28%;
-
     height: 50px;
-
     align-self: flex-end;
-
 }
-
 .boton-enviar p {
-
     font-size: 20px;
-
 }
-  
   /* Estilos para reducir el tamaño del botón "Eliminar" */
   .borrar {
     width: 15px;

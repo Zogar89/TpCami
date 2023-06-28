@@ -13,7 +13,6 @@
 /*------------- INFORMACION PARA ANOTARSE ------------*/
 #pasosinscripcion {
     /*border: black 1px solid;*/
-    
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
@@ -47,8 +46,7 @@
     flex-direction: column;
     margin: 10px 5px 10px 5px;
 }
-.cajadatos {
-
+.cajadatos {/**/
 }
 .cajadatos h4 {
     font-size: 25px;
@@ -81,13 +79,11 @@
     text-decoration: none;
     color: #000000;
 }
-
 @media screen and (max-width: 1024px) {
     #pasosinscripcion {
         margin: 10px 0;
     }
 }
-
 @media screen and (max-width: 600px) {
     #pasosinscripcion img {
         width: 50px;
@@ -99,5 +95,4 @@
     #pasosinscripcion {
         margin: 5px 0;
     }
-
 }

@@ -1,247 +1,126 @@
-@media screen and (min-width:60em){
 main {
-
-    /*border: black 1px solid;*/
-
-    margin-top: 30px;
-
-    display: flex;
-
-    justify-content: space-around;
-
+  /*border: black 1px solid;*/
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
 }
-
 main section {
-
-    /*border: black 1px solid;*/
-
-    width: 75%;
-
+  /*border: black 1px solid;*/
+  width: 75%;
+  flex-wrap: wrap;
 }
-
 /*------------- INFORMACIÓN ------------*/
-
 #infoCurso {
-
-    /*border: black 1px solid;*/
-
-    display: flex;
-
-    justify-content: space-around;
-
+  /*border: black 1px solid;*/
+  display: flex;
+  justify-content: space-around;
 }
-
 #infoCurso div {
-
-    width: 60%;
-
+  width: 60%;
 }
-
 #infoCurso img {
-
-    border-radius: 20px;
-
-    width: 35%;
-
-    height: 30%;
-
-    align-self: center;
-
-    margin-left: 10px;
-
+  border-radius: 20px;
+  width: 35%;
+  height: 30%;
+  align-self: center;
+  margin-left: 10px;
 }
-
 #infoCurso h2 {
-
-    font-size: 35px;
-
-    margin-bottom: 15px;
-    
+  font-size: 35px;
+  margin-bottom: 15px;
 }
-
 #infoCurso li {
-
-    list-style: none;
-
-    font-size: 18px;
-
-    margin-bottom: 10px;
-
+  list-style: none;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
-
 /*------------- REQUISITOS ------------*/
-
 #requisito {
-
-    /*border: black 1px solid;*/
-
-    display: flex;
-
-    flex-direction: column;
-
-    padding-left: 20px;
-
+  /*border: black 1px solid;*/
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
 }
-
 #requisito h4 {
-
-    margin-top: 15px;
-
-    font-size: 18px;
-
+  margin-top: 15px;
+  font-size: 18px;
 }
-
 #requisito ul {
-
-    padding-left: 30px;
-
-    margin-top: 10px;
-
+  padding-left: 30px;
+  margin-top: 10px;
 }
-
 #requisito .enviar {
-
-    border: #FF5B00 2px solid;
-
-    width: 150px;
-
-    height: 40px;
-
-    margin: 5px 25px;
-
-    align-self: flex-end;
-
+  border: #ff5b00 2px solid;
+  width: 150px;
+  height: 40px;
+  margin: 5px 25px;
+  align-self: flex-end;
 }
-
 .enviar a {
-
-    text-decoration: none;
-
-    color: black;
-
+  text-decoration: none;
+  color: black;
 }
-
 /*------------- DOCENTE ------------*/
-
 #docente {
-
-    border: #FF5B00 2px solid;
-
-    background-color: #FFE6C7;
-
-    border-radius: 20px;
-
-    height: 190px;
-
-    padding: 20px;
-
-    margin: 30px;
-
+  border: #ff5b00 2px solid;
+  background-color: #ffe6c7;
+  border-radius: 20px;
+  height: 190px;
+  padding: 20px;
+  margin: 30px;
 }
-
 #docente div {
-
-    display: flex;
-
-    align-items: center;
-
+  display: flex;
+  align-items: center;
 }
-
 #docente img {
-
-    width: 8%;
-
+  width: 8%;
 }
-
 #docente h2 {
-
-    margin-left: 15px;
-
+  margin-left: 15px;
 }
-
 #docente p {
-
-    margin-top: 15px;
-
+  margin-top: 15px;
 }
-
-
 /*------------- OTROS CURSOS ------------*/
-
 aside {
-
-    /*border: black 1px solid;*/
-
-    width: 20%;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: space-around;
-
+  /*border: black 1px solid;*/
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-
 .infocurso {
-
-    border: #522710 2px solid;
-
-    background-color: #ffa559;
-
-    border-radius: 20px;
-
-    height: 17%;
-
-    padding: 20px;
-
-    display: flex;
-
-    flex-direction: column;
-
+  border: #522710 2px solid;
+  background-color: #ffa559;
+  border-radius: 20px;
+  height: 17%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
-
 .infocurso h4 {
-
-    font-size: 20px;
-
-    margin-bottom: 10px;
-
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-
 .infocurso ul {
-    
-    list-style: none;
-
-    margin-bottom: 10px;
-
+  list-style: none;
+  margin-bottom: 10px;
 }
-
 .infocurso .enviar {
-
-    border: #FF5B00 2px solid;
-
-    width: 60%;
-
-    margin-top: 7px;
-
-    align-self: flex-end;
-
+  border: #ff5b00 2px solid;
+  width: 60%;
+  margin-top: 7px;
+  align-self: flex-end;
 }
-
 .infocurso .enviar a {
-
-    text-decoration: none;
-
-    color: black;
-
+  text-decoration: none;
+  color: black;
 }
-}
-
 .dropdown-content {
-    display: none;
-    padding: 5px;
-  }
-  
+  display: none;
+  padding: 5px;
+}
 .dropdown-content a,
 .dropdown-content input[type="radio"] {
   flex: 0 0 50%;
@@ -250,44 +129,38 @@ aside {
   padding: 5px;
   text-decoration: none;
 }
-
 .dropdown-content input[type="radio"] {
   margin-right: 5px;
 }
-  .dropdown-btn {
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    text-align: left;
-    outline: none;  
-    background-color: #f1f1f1;
-    border: 1px solid orangered;
-    cursor: pointer;
-    width: 45%;
-  }
-  
-  .dropdown-btn:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown-btn:after {
-    content: '\002B';
-    color: #777;
-    float: right;
-    font-weight: bold;
-    margin-left: 5px;
-  }
-  
-  .dropdown-btn.active:after {
-    content: "\2212";
-  }
-  
-  /*.dropdown-content a {
+.dropdown-btn {
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  background-color: #f1f1f1;
+  border: 1px solid orangered;
+  cursor: pointer;
+  width: 45%;
+}
+.dropdown-btn:hover {
+  background-color: #ddd;
+}
+.dropdown-btn:after {
+  content: "\002B";
+  color: #777;
+  float: right;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.dropdown-btn.active:after {
+  content: "\2212";
+}
+/*.dropdown-content a {
     display: block;
     padding: 5px;
     text-decoration: none;
   }
-  
   .dropdown-content a:hover {
     background-color: #f1f1f1;
   }
@@ -295,7 +168,6 @@ aside {
     position: relative;
     display: inline-block;
   }
-
   .dropdown-btn {
     display: flex;
     padding: 1%;
@@ -304,7 +176,6 @@ aside {
     cursor: pointer;
     width: 45%;
   }
-
   .dropdown-content {
     display: none;
     position: absolute;
@@ -314,57 +185,46 @@ aside {
     padding: 10px;
     z-index: 1;
   }
-  
   .dropdown-content.open {
     display: flex;
     flex-direction: column;    
   }
-  
   .dropdown-content a {
     display: block;
   }
-  
   .dropdown-content label, a{
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: center;
   }*/
-
-
-
-
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-  
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
- 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

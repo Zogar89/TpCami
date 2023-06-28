@@ -21,7 +21,6 @@ header section {
   height: 120px;
 }
 /*------------- LOGO DE LA PAGINA DIGITAL ARTS ------------*/
-
 #logo {
   margin-left: 2%;
   height: 100%;
@@ -29,12 +28,10 @@ header section {
   flex-shrink: 0;
   display: flex;
 }
-
 #logo img {
   height: 100%;
   width: auto;
 }
-
 /*------------- BUSCADOR DEL HEADER ------------*/
 #buscador {
   /*border: white 1px solid;*/
@@ -71,7 +68,6 @@ header section {
   background-image: linear-gradient(#ffa559, #ebc2a2, #ffa559);
 }
 /*------------- IMAGEN DEL CARRITO ------------*/
-
 #carrito {
   /*border: white 1px solid;*/
   width: 50px;
@@ -79,7 +75,6 @@ header section {
   align-items: center;
   margin-right: 3%;
 }
-
 #carrito img {
   /*border: white 1px solid;*/
   width: 100%;
@@ -171,7 +166,6 @@ footer section {
   padding: 0;
   flex-wrap: wrap;
 }
-
 #navegacionMenuFooter ul li {
   margin: 0.5em;
 }
@@ -224,7 +218,6 @@ footer section {
     margin: 0 8px;
   }
 }
-
 /* PARA Celulares*/
 @media screen and (max-width: 600px) {
   nav ul > li > a {
@@ -239,8 +232,6 @@ footer section {
     font-size: small;
   }
   #carrito img {
-    /*border: white 1px solid;*/
-
     width: 80%;
   }
   #carrito h4 {
